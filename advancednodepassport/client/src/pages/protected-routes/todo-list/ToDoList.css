@@ -1,0 +1,36 @@
+h1 {
+  margin: auto;
+  text-shadow: 0 0 30px rgb(166, 163, 201);
+}
+
+.Todo-list {
+  margin: 20px;
+  
+  height: 100%;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+
+}
+
+.Todo-item {
+  background-color: rgb(166, 163, 201);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 2px;
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

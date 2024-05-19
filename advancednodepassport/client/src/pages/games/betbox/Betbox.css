@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.game-console {
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 9/16;
+    border-radius: 2.5%;
+    border: 5px solid #111111;
+    background-color: #111111;
+}
+
+.game-window {
+    border: 3px solid black;
+    margin: 0;
+    padding: 0;
+    background-color: #539e47;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 2px 5px 0 5px;
+    font-size: 1.2rem;
+}
+
+.left {
+    margin: 0;
+    width: 50%;
+    text-align: start;
+}
+
+.right {
+    margin: 0;
+    width: 50%;
+    text-align: end;
+}
+
+.game-main {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.game-sec {
+    text-align: center;
+}
+
+.game-third {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.game-buttons {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gameButton {
+    margin: 1px;
+    padding: 0;
+    font-size: 1.2rem;
+
+}
+
+.betUp {
+    color: green;
+}
+
+.betDown {
+    color: red;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.red {
+    background-color: red;
+    color: black;
+    border-color: red;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 720px) {
+    .image-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+  
+@media only screen and (max-height: 600px) {
+    .text-with-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    .game-main {
+        font-size: 1.2rem;
+    }
+    .game-sec {
+        font-size: 1rem
+    }
+    .game-third {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-height: 420px) {
+    .game-main {
+        font-size: 1.2rem;
+    }
+    .game-sec {
+        font-size: 1rem
+    }
+    .game-third {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

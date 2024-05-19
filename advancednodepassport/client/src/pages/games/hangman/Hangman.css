@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+#Hangman {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 18px;
+  border: 1px solid black;
+  box-shadow: 0 0 30px black;
+  background-color: rgb(56, 66, 48);
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 9/16;
+}
+
+#Game-Display {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#Game-Display-header {
+  font-weight: bold;
+}
+
+#Game-title {
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: rgb(228, 45, 45);
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+#stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px 0 15px;
+  margin: 0;
+}
+
+#stats > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#Game-screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#message {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#hiddenWord {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  column-gap: 3px;
+  font-size: 3rem;
+}
+
+#Game-Controls {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.letters {
+  margin-top: 10px;
+}
+
+.buttons {
+  width: 55px;
+  aspect-ratio: 1/1;
+  color: black;
+  font-weight: bold;
+  border-color: black;
+  background-color: slateblue;
+}
+
+.correct {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+@media only screen and (max-width: 414px) {
+  #video {
+    width: 420px;
+    max-width: 100vw;
+    max-height: 315px;
+  }
+  .buttons {
+    width: 54px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #video {
+    width: 420px;
+    max-width: 100vw;
+    max-height: 315px;
+  }
+  .buttons {
+    width: 49px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-weight: bold;
+  }
+  .buttons {
+    width: 45px;
+  }
+  #header {
+    font-size: 7px;
+  }
+
+  .nav-link {
+    margin: initial;
+  }
+
+  #video {
+    width: 200px;
+    max-height: 130px;
+  }
+}

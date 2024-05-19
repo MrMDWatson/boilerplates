@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+#App {
+  background-color: rgb(67, 84, 111);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#Header {
+  background-color: #000000;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 89;
+}
+
+#Header-title > a {
+  color: white;
+  text-decoration: none;
+}
+
+#Navbar {                       /* Navbar and navbar buttons */
+  background-color: #000000;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: static;
+  z-index: 99;
+}
+
+.Menubutton {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.Menubutton > a {
+  color: white;
+  text-decoration: none;
+}
+
+.Menu-dropdown {
+  padding: 0;
+  position: absolute;
+  text-align: start;
+}
+
+.Menu-dropdown-button {
+  
+  list-style: none;
+  position: relative;
+  right: 10px;
+}
+
+.Menu-dropdown-button > a {
+  background-color: #8fa3cb;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+
+.Menu-dropdown-button > a:hover {
+  background-color: white;
+  color: #8fa3cb;
+}
+
+#Main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: static;
+  z-index: 79;
+}
+
+#Home {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote-box {
+  padding: 10px 25px;
+  border: 6px double black;
+  background-color: rgb(205, 255, 215);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-width: 300px;
+  max-width: 700px;
+  height: fit-content;
+  min-height: 250px;
+  justify-content: space-evenly;
+}
+
+#quote-box > div {
+  border: 2px double black;
+  background-color: rgb(210, 197, 163);
+  padding: 0 5px;
+  margin: 5px;
+}
+
+#quote {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#quote-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#set-new-quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-pic {
+  width: 720px;
+}
+
+.Rec-link {
+  background-color: rgb(173, 186, 207);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Games {
+  min-height: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Games-toolbar {
+  background-color: #282c34;
+  text-align: center;
+  width: 100%;
+}
+
+#Games-header {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+#GameHome {
+  background-color: rgb(213, 200, 190);
+  padding: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.Square-link {
+  width: 100%;
+  aspect-ratio: 8/1;
+  border: 1px solid black;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#Footer {
+  background-color: rgb(0, 0, 0);
+  padding: 2px;
+  text-align: center;
+}
+
+#Footer > a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 736px) {
+  #main-pic {
+    width: 414px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  #main-pic {
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #main-pic {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #main-pic {
+    width: 373px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #main-pic {
+    width: 338px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #main-pic {
+    width: 288px;
+  }
+}

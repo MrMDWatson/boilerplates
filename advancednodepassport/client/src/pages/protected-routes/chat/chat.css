@@ -1,0 +1,7 @@
+.chat-body {
+  overflow: scroll;
+  height: 30vh;
+  max-height: 30vh;
+  width: 40vw;
+  max-width: 40vw;
+}
